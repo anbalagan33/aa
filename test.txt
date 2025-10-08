@@ -1,0 +1,13 @@
+# This script prints the current month and checks if today is in the first half or second half of the month.
+
+import datetime
+
+today = datetime.date.today()
+month = today.strftime("%B")
+day = today.day
+
+print(f"Current month: {month}")
+if day <= 15:
+    print("Today is in the first half of the month.")
+else:
+    print("Today is in the second half of the month.")
